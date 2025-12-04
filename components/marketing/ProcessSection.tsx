@@ -1,9 +1,7 @@
-import { FaRegListAlt, FaRocket, FaRegPaperPlane, FaPhoneAlt } from 'react-icons/fa';
 import Link from "next/link";
 
 const steps = [
   {
-    icon: <FaPhoneAlt className="w-5 h-5 text-blue-500" />,
     title: 'Contact',
     description: 'Book a call to discuss your goals, and ideas.',
     mockup: (
@@ -23,14 +21,10 @@ const steps = [
             <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Project Kickoff</div>
           </div>
         </div>
-        <div className="mt-3 flex justify-end">
-          <FaPhoneAlt className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
       </div>
     ),
   },
   {
-    icon: <FaRegListAlt className="w-5 h-5 text-blue-500" />,
     title: 'Discuss Your Idea',
     description: "Tell me your unique vision, and I'll create stunning, functional MVP.",
     mockup: (
@@ -50,14 +44,10 @@ const steps = [
             <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Tech Stack Selection</div>
           </div>
         </div>
-        <div className="mt-3 flex justify-end">
-          <FaRegListAlt className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
       </div>
     ),
   },
   {
-    icon: <FaRocket className="w-5 h-5 text-blue-500" />,
     title: 'Kickstart Development',
     description: 'I expertly transform your idea into a powerful, scalable solution.',
     mockup: (
@@ -77,14 +67,10 @@ const steps = [
             <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Testing Pending</div>
           </div>
         </div>
-        <div className="mt-3 flex justify-end">
-          <FaRocket className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
       </div>
     ),
   },
   {
-    icon: <FaRegPaperPlane className="w-5 h-5 text-blue-500" />,
     title: 'And Hand Over',
     description: 'Receive a fully tested, polished, quality product tailored to you.',
     mockup: (
@@ -103,9 +89,6 @@ const steps = [
             <div className="w-2 h-2 rounded-full bg-green-500"></div>
             <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Handover Complete</div>
           </div>
-        </div>
-        <div className="mt-3 flex justify-end">
-          <FaRegPaperPlane className="w-6 h-6 text-blue-500 opacity-70" />
         </div>
       </div>
     ),
