@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 relative overflow-hidden" style={{ backgroundImage: 'url(/herobackground.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="w-full max-w-7xl mx-auto">
+      {/* White fade at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
+
+      <div className="w-full max-w-7xl mx-auto relative z-20">
         <div className="flex flex-col items-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/30 backdrop-blur-sm border border-white/40 shadow-sm">
