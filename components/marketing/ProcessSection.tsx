@@ -1,114 +1,25 @@
-import { FaRegListAlt, FaRocket, FaRegPaperPlane, FaPhoneAlt } from 'react-icons/fa';
 import Link from "next/link";
 
 const steps = [
   {
-    icon: <FaPhoneAlt className="w-5 h-5 text-blue-500" />,
     title: 'Contact',
     description: 'Book a call to discuss your goals, and ideas.',
-    mockup: (
-      <div className="w-full bg-white rounded-2xl p-4 shadow-lg">
-        <div className="text-xs text-gray-500 mb-3 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Schedule Meeting</div>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Initial Consultation</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Requirements Discussion</div>
-          </div>
-          <div className="flex items-center gap-2 opacity-50">
-            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-            <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Project Kickoff</div>
-          </div>
-        </div>
-        <div className="mt-3 flex justify-end">
-          <FaPhoneAlt className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
-      </div>
-    ),
+    step: 'Step 1',
   },
   {
-    icon: <FaRegListAlt className="w-5 h-5 text-blue-500" />,
     title: 'Discuss Your Idea',
     description: "Tell me your unique vision, and I'll create stunning, functional MVP.",
-    mockup: (
-      <div className="w-full bg-white rounded-2xl p-4 shadow-lg">
-        <div className="text-xs text-gray-500 mb-3 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Project Planning</div>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Feature Planning</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Design Mockups</div>
-          </div>
-          <div className="flex items-center gap-2 opacity-50">
-            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-            <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Tech Stack Selection</div>
-          </div>
-        </div>
-        <div className="mt-3 flex justify-end">
-          <FaRegListAlt className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
-      </div>
-    ),
+    step: 'Step 2',
   },
   {
-    icon: <FaRocket className="w-5 h-5 text-blue-500" />,
     title: 'Kickstart Development',
     description: 'I expertly transform your idea into a powerful, scalable solution.',
-    mockup: (
-      <div className="w-full bg-white rounded-2xl p-4 shadow-lg">
-        <div className="text-xs text-gray-500 mb-3 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Development Progress</div>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Frontend Complete</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Backend In Progress</div>
-          </div>
-          <div className="flex items-center gap-2 opacity-50">
-            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-            <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Testing Pending</div>
-          </div>
-        </div>
-        <div className="mt-3 flex justify-end">
-          <FaRocket className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
-      </div>
-    ),
+    step: 'Step 3',
   },
   {
-    icon: <FaRegPaperPlane className="w-5 h-5 text-blue-500" />,
     title: 'And Hand Over',
     description: 'Receive a fully tested, polished, quality product tailored to you.',
-    mockup: (
-      <div className="w-full bg-white rounded-2xl p-4 shadow-lg">
-        <div className="text-xs text-gray-500 mb-3 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Delivery Status</div>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Quality Assurance</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <div className="text-sm text-gray-900 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Documentation Ready</div>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <div className="text-sm text-gray-500" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>Handover Complete</div>
-          </div>
-        </div>
-        <div className="mt-3 flex justify-end">
-          <FaRegPaperPlane className="w-6 h-6 text-blue-500 opacity-70" />
-        </div>
-      </div>
-    ),
+    step: 'Step 4',
   },
 ];
 
@@ -133,21 +44,26 @@ export default function ProcessSection() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="relative rounded-3xl p-6 flex flex-col min-h-[380px] bg-gradient-to-br from-gray-100 via-gray-50 to-blue-50 shadow-xl"
+              className="relative rounded-3xl p-6 flex flex-col justify-between min-h-[240px] bg-gradient-to-br from-gray-100 via-gray-50 to-blue-50 shadow-xl"
             >
-              {/* Mockup Preview */}
-              <div className="mb-6 transform hover:scale-[1.02] transition-transform duration-300">
-                {step.mockup}
-              </div>
+              <span className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 border border-gray-300 text-gray-900 text-lg font-bold">
+                {idx + 1}
+              </span>
 
-              {/* Content */}
-              <div className="mt-auto">
+              <div className="mb-4">
                 <h3 className="text-gray-900 text-xl font-bold mb-2" style={{ fontFamily: 'Satoshi-Medium, sans-serif' }}>
                   {step.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                   {step.description}
                 </p>
+              </div>
+
+              <div className="mt-auto">
+                <hr className="border-t border-gray-200 mb-2" />
+                <span className="inline-block px-3 py-0.5 rounded-full border border-gray-300 text-xs text-gray-600">
+                  {step.step}
+                </span>
               </div>
             </div>
           ))}
