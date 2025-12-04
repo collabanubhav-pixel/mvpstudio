@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 relative overflow-hidden" style={{ backgroundImage: 'url(/herobackground.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex flex-col items-start max-w-2xl">
+        <div className="flex flex-col items-start">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/30 backdrop-blur-sm border border-white/40 shadow-sm">
             <span className="text-sm text-gray-800 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
@@ -16,7 +16,7 @@ export default function Hero() {
           {/* Heading */}
           <h1 className="text-gray-900 text-5xl md:text-7xl font-medium text-left mb-8 leading-tight" style={{ fontFamily: 'Satoshi-Medium, sans-serif' }}>
             From Ideas To Impact<br />
-          Products that  <span className="italic font-light"> Dominate</span>
+            Products that <span className="italic font-light">Dominate</span>
           </h1>
 
           {/* Subtitle */}
