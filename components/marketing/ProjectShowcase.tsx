@@ -31,12 +31,7 @@ export default function ProjectShowcase() {
     <section className="w-full py-20 px-6 md:px-12 bg-white">
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col items-center">
-          <h2
-            className="text-gray-900 text-4xl md:text-5xl font-medium text-center mb-16"
-            style={{ fontFamily: "Satoshi-Medium, sans-serif" }}
-          >
-            Featured Projects
-          </h2>
+
 
           <div className="w-full max-w-5xl relative aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 shadow-2xl">
             <AnimatePresence mode="wait">
