@@ -41,11 +41,11 @@ function WorkPageContent() {
   return (
     <>
       <Navbar />
-      <div className="text-white min-h-screen py-20 md:py-24 pt-32 md:pt-40">
+      <div className="text-gray-900 min-h-screen py-20 md:py-24 pt-32 md:pt-40 bg-white">
         <div className="max-w-2xl mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-normal tracking-tighter text-white">
+          <h1 className="text-4xl md:text-6xl font-normal tracking-tighter text-gray-900">
             Let My{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               Work Speak
             </span>
           </h1>
@@ -53,8 +53,8 @@ function WorkPageContent() {
         <div className="max-w-7xl mx-auto mt-12 px-4 md:px-8">
           <div className="grid grid-cols-1 gap-8 md:max-w-4xl mx-auto">
             {projects.map((project, index) => (
-              <div key={index} className="rounded-lg overflow-hidden border border-neutral-800">
-                <div className="relative w-full aspect-video bg-black">
+              <div key={index} className="rounded-lg overflow-hidden border border-gray-300 shadow-md">
+                <div className="relative w-full aspect-video bg-gray-50">
                   <Image
                     src={project.src}
                     alt={project.alt}
@@ -77,7 +77,7 @@ export default function WorkPage() {
   return (
     <Suspense
       fallback={
-        <div className="bg-black text-white min-h-screen flex items-center justify-center">
+        <div className="bg-white text-gray-900 min-h-screen flex items-center justify-center">
           <div className="text-xl">Loading...</div>
         </div>
       }

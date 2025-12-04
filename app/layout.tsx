@@ -18,10 +18,8 @@ export const metadata: Metadata = {
   description: "MVP Studio",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
       { url: "/logomvp.png", type: "image/png" }
     ],
-    shortcut: "/favicon.ico",
     apple: "/logomvp.png",
   },
   openGraph: {
@@ -31,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "MVP Studio",
     images: [
       {
-        url: "/opengraph-image.png", // Replace with your actual image URL
+        url: "/logomvp.png",
         width: 1200,
         height: 630,
         alt: "MVP Studio Preview",
@@ -43,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MVP Studio",
     description: "MVP Studio",
-    images: ["/opengraph-image.png"], // Replace with actual image URL
+    images: ["/logomvp.png"],
   },
 };
 
@@ -54,9 +52,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/logomvp.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logomvp.png" />
       </head>
       <body

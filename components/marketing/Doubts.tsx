@@ -54,34 +54,34 @@ export function FaqSection() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-6 items-start">
         {/* Left: Testimonial Card and Buttons */}
         <div className="flex-1 flex flex-col items-start max-w-md w-full">
-          <span className="inline-block mb-4 px-3 py-1 rounded-full bg-black/80 border border-neutral-700 text-[10px] text-white font-normal tracking-wide uppercase" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+          <span className="inline-block mb-4 px-3 py-1 rounded-full bg-gray-100 border border-gray-300 text-[10px] text-gray-900 font-normal tracking-wide uppercase" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
             FAQ Section
           </span>
-          <h2 className="text-white text-3xl md:text-5xl font-normal mb-1" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
-            <span className="text-white">Questions,</span> <span className="text-neutral-400">Answers</span>
+          <h2 className="text-gray-900 text-3xl md:text-5xl font-normal mb-1" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            <span className="text-gray-900">Questions,</span> <span className="text-gray-600">Answers</span>
           </h2>
-          <p className="text-white/60 text-sm md:text-base mb-6" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+          <p className="text-gray-600 text-sm md:text-base mb-6" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
             Get quick answers to your most pressing questions
           </p>
           <div className="w-full mb-6">
-            <div className="rounded-2xl bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] p-4 flex flex-row gap-3 items-center mb-4">
+            <div className="rounded-2xl bg-gradient-to-r from-gray-50 via-white to-gray-50 border border-gray-300 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.5),_0_4px_10px_rgba(0,0,0,0.08)] p-4 flex flex-row gap-3 items-center mb-4">
               <div className="flex-1 flex flex-col">
-                <span className="text-white font-bold text-base" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.name}</span>
-                <span className="text-white/60 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.role}</span>
+                <span className="text-gray-900 font-bold text-base" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.name}</span>
+                <span className="text-gray-600 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.role}</span>
                 <div className="flex items-center gap-1 mt-1 mb-1">
-                  <span className="text-white/80 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.rating.toFixed(1)}</span>
+                  <span className="text-gray-700 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.rating.toFixed(1)}</span>
                   {[...Array(Math.floor(testimonial.rating))].map((_, i) => (
                     <FaStar key={i} className="text-yellow-400 w-3 h-3" />
                   ))}
                 </div>
-                <p className="text-white/80 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.text}</p>
+                <p className="text-gray-700 text-xs" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>{testimonial.text}</p>
               </div>
             </div>
             <div className="flex flex-row gap-3 w-full">
-              <Link href="/work" className="rounded-full px-5 py-1.5 text-sm font-normal w-full md:w-auto bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 text-white border border-white/10 transition hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+              <Link href="/work" className="rounded-full px-5 py-1.5 text-sm font-normal w-full md:w-auto bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 text-white border border-gray-700 transition hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                 See All Projects
               </Link>
-              <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="rounded-full px-5 py-1.5 text-sm font-normal w-full md:w-auto bg-gradient-to-r from-neutral-200 to-neutral-400 text-black border border-neutral-300 transition hover:from-neutral-100 hover:to-neutral-300 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+              <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="rounded-full px-5 py-1.5 text-sm font-normal w-full md:w-auto bg-gray-900 text-white border border-gray-800 transition hover:bg-gray-800 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                 Contact Now
               </a>
             </div>
@@ -91,15 +91,15 @@ export function FaqSection() {
         <div className="flex-1 w-full">
           <Accordion type="single" collapsible className="space-y-2 md:space-y-3">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
-                className="border border-white/20 rounded-lg px-3 py-1.5 md:px-5 md:py-3 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
+                className="border border-gray-300 rounded-lg px-3 py-1.5 md:px-5 md:py-3 hover:bg-gray-50 transition-all duration-300 backdrop-blur-sm"
               >
-                <AccordionTrigger className="text-left font-helvetica font-normal hover:text-white hover:no-underline text-white text-sm md:text-base">
+                <AccordionTrigger className="text-left font-helvetica font-normal hover:text-gray-700 hover:no-underline text-gray-900 text-sm md:text-base">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/80 font-helvetica pt-1 pb-1 md:pb-3 text-left text-xs md:text-sm">
+                <AccordionContent className="text-gray-700 font-helvetica pt-1 pb-1 md:pb-3 text-left text-xs md:text-sm">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

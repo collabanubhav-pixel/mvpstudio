@@ -45,11 +45,11 @@ export function PricingSection() {
     <section id="plans" className="pt-20 sm:pt-24 pb-16 sm:pb-20 px-3 md:px-0">
       <div className="w-full max-w-5xl mx-auto z-10 px-4 md:px-8">
         <div className="text-center">
-          <h2 className="text-lg font-normal leading-7 text-white/80" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+          <h2 className="text-lg font-normal leading-7 text-gray-600" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
             Pricing
           </h2>
         </div>
-        <h2 className="mt-6 text-3xl md:text-5xl lg:text-6xl font-normal tracking-tight text-center text-white" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+        <h2 className="mt-6 text-3xl md:text-5xl lg:text-6xl font-normal tracking-tight text-center text-gray-900" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
           Simple Pricing. Maximum Value.
         </h2>
         <div className="isolate mt-16 grid max-w-md grid-cols-1 gap-y-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-x-16">
@@ -57,38 +57,38 @@ export function PricingSection() {
             <div
               key={plan.name}
               className={cn(
-                "relative flex flex-col justify-between rounded-3xl p-10 ring-1 ring-white/20 xl:p-12 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)]"
+                "relative flex flex-col justify-between rounded-3xl p-10 ring-1 ring-gray-300 xl:p-12 bg-gradient-to-r from-gray-50 via-white to-gray-50 border border-gray-300 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.5),_0_4px_10px_rgba(0,0,0,0.08)]"
               )}
             >
               {plan.highlighted && (
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 transform rounded-full bg-neutral-700 px-6 py-2 text-base font-semibold leading-6 text-white" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 transform rounded-full bg-gray-900 px-6 py-2 text-base font-semibold leading-6 text-white" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                   Most popular
                 </div>
               )}
               <div>
-                <h3 className="text-xl font-bold leading-8 text-white" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+                <h3 className="text-xl font-bold leading-8 text-gray-900" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                   {plan.name}
                 </h3>
-                <p className="mt-6 text-base leading-6 text-white/80" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+                <p className="mt-6 text-base leading-6 text-gray-700" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                   {plan.description}
                 </p>
                 <p className="mt-8 flex items-baseline gap-x-1">
-                  <span className="text-5xl font-bold tracking-tight text-white" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+                  <span className="text-5xl font-bold tracking-tight text-gray-900" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                     {plan.price}
                   </span>
-                  <span className="text-base font-semibold leading-6 text-white/80" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+                  <span className="text-base font-semibold leading-6 text-gray-700" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
                     /project
                   </span>
                 </p>
                 <ul
                   role="list"
-                  className="mt-10 space-y-4 text-base leading-6 text-white/80"
+                  className="mt-10 space-y-4 text-base leading-6 text-gray-700"
                   style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}
                 >
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       <Check
-                        className="h-6 w-6 flex-none text-white/60"
+                        className="h-6 w-6 flex-none text-gray-600"
                         aria-hidden="true"
                       />
                       {feature}
@@ -100,7 +100,7 @@ export function PricingSection() {
                 href={plan.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-10 block rounded-full px-6 py-3 text-center text-base font-normal text-white border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}
+                className="mt-10 block rounded-full px-6 py-3 text-center text-base font-normal text-white border border-gray-700 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] transition-all duration-300 hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}
               >
                 {plan.cta}
               </a>

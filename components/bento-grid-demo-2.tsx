@@ -30,7 +30,7 @@ const ArrowIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="text-white drop-shadow-lg"
+    className="text-gray-900 drop-shadow-lg"
     style={{ transform: 'rotate(-30deg)' }}
   >
     <line x1="5" y1="12" x2="19" y2="12" />
@@ -57,7 +57,7 @@ const items = [
           className="w-full h-full object-cover rounded-xl"
           priority
         />
-        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-black/60 rounded-full hover:bg-black/80 transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
+        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-white/80 rounded-full hover:bg-white transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
           <ArrowIcon />
         </Link>
       </div>
@@ -74,7 +74,7 @@ const items = [
           height={400}
           className="w-full h-full object-cover object-left rounded-xl"
         />
-        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-black/60 rounded-full hover:bg-black/80 transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
+        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-white/80 rounded-full hover:bg-white transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
           <ArrowIcon />
         </Link>
       </div>
@@ -91,7 +91,7 @@ const items = [
           height={400}
           className="w-full h-full object-cover object-left rounded-xl"
         />
-        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-black/60 rounded-full hover:bg-black/80 transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
+        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-white/80 rounded-full hover:bg-white transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
           <ArrowIcon />
         </Link>
       </div>
@@ -108,7 +108,7 @@ const items = [
           height={400}
           className="w-full h-full object-cover rounded-xl"
         />
-        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-black/60 rounded-full hover:bg-black/80 transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
+        <Link href="/work" className="absolute top-2 right-2 z-10 p-1 bg-white/80 rounded-full hover:bg-white transition" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}>
           <ArrowIcon />
         </Link>
       </div>

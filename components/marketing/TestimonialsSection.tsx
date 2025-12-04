@@ -40,20 +40,20 @@ export function TestimonialsSection() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-start">
         {/* Left: Heading, CTA */}
         <div className="flex-1 flex flex-col items-start justify-start max-w-xl w-full">
-          <span className="inline-block mb-4 px-3 py-1 rounded-full bg-black/80 border border-neutral-700 text-[10px] text-white font-normal tracking-wide uppercase" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+          <span className="inline-block mb-4 px-3 py-1 rounded-full bg-gray-100 border border-gray-300 text-[10px] text-gray-900 font-normal tracking-wide uppercase" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
             Happy Clients
           </span>
-          <h2 className="text-white text-3xl md:text-5xl font-normal mb-1" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '2.2rem' }}>
-            <span className="text-white">Clients</span> <span className="text-neutral-400">Love me</span>
+          <h2 className="text-gray-900 text-3xl md:text-5xl font-normal mb-1" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '2.2rem' }}>
+            <span className="text-gray-900">Clients</span> <span className="text-gray-600">Love me</span>
           </h2>
-          <p className="text-white/60 text-sm md:text-base mb-6" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
+          <p className="text-gray-600 text-sm md:text-base mb-6" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
             Trusted by clients who value quality and results.
           </p>
           <div className="flex flex-row gap-3 w-full">
-            <Link href="/work" className="px-4 py-1.5 rounded-full text-white font-normal text-sm transition bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
+            <Link href="/work" className="px-4 py-1.5 rounded-full text-white font-normal text-sm transition bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border border-gray-700 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
               See All Projects
             </Link>
-            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 rounded-full text-white font-normal text-sm transition bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
+            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 rounded-full text-white font-normal text-sm transition bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border border-gray-700 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.85rem' }}>
               Contact Now
             </a>
           </div>
@@ -61,19 +61,19 @@ export function TestimonialsSection() {
         {/* Right: Testimonial Cards */}
         <div className="flex-1 flex flex-col gap-5 w-full">
           {testimonials.map((t) => (
-            <div key={t.name} className="rounded-2xl p-4 flex flex-col md:flex-row gap-3 items-start bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)]">
+            <div key={t.name} className="rounded-2xl p-4 flex flex-col md:flex-row gap-3 items-start bg-gradient-to-r from-gray-50 via-white to-gray-50 border border-gray-300 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.5),_0_4px_10px_rgba(0,0,0,0.08)]">
               <div className="flex-1 flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-center md:gap-2">
-                  <span className="text-white font-bold text-sm" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.name}</span>
-                  <span className="text-white/60 text-[10px] md:ml-2" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.role}</span>
+                  <span className="text-gray-900 font-bold text-sm" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.name}</span>
+                  <span className="text-gray-600 text-[10px] md:ml-2" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.role}</span>
                 </div>
                 <div className="flex items-center gap-1 mt-1 mb-1">
-                  <span className="text-white/80 text-[10px]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.rating.toFixed(1)}</span>
+                  <span className="text-gray-700 text-[10px]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.rating.toFixed(1)}</span>
                   {[...Array(Math.floor(t.rating))].map((_, i) => (
                     <FaStar key={i} className="text-yellow-400 w-2.5 h-2.5" />
                   ))}
                 </div>
-                <p className="text-white/80 text-[10px]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.text}</p>
+                <p className="text-gray-700 text-[10px]" style={{ fontFamily: 'Satoshi-Regular, sans-serif', fontSize: '0.7rem' }}>{t.text}</p>
               </div>
             </div>
           ))}
