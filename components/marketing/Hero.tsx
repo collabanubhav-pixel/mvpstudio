@@ -1,5 +1,20 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+const projectImages = [
+  "/autobot.png",
+  "/crm.png",
+  "/emailai.png",
+  "/finc.png",
+  "/horoscope.PNG",
+  "/nexar.png",
+  "/nurodeep.png",
+  "/outreach.png",
+  "/serene.png",
+  "/darkop.png",
+];
 
 export default function Hero() {
   return (
@@ -28,13 +43,51 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-row items-center gap-4">
+          <div className="flex flex-row items-center gap-4 mb-16">
             <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full bg-white text-gray-900 font-medium text-base border border-gray-200 shadow-md transition hover:shadow-lg hover:scale-105 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               Get started
             </a>
             <Link href="/work" className="px-7 py-3 rounded-full text-gray-900 font-medium text-base border-2 border-gray-900/20 backdrop-blur-sm transition hover:bg-white/50 hover:border-gray-900/30 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               View Projects →
             </Link>
+          </div>
+
+          {/* Animated Project Images */}
+          <div className="w-full overflow-hidden relative">
+            <div className="flex gap-6">
+              <motion.div
+                className="flex gap-6 flex-shrink-0"
+                animate={{
+                  x: [0, -1920],
+                }}
+                transition={{
+                  x: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 30,
+                    ease: "linear",
+                  },
+                }}
+              >
+                {[...projectImages, ...projectImages].map((image, index) => (
+                  <div
+                    key={index}
+                    className="relative w-80 h-52 rounded-2xl overflow-hidden bg-white/40 backdrop-blur-sm border border-white/50 shadow-lg flex-shrink-0 hover:scale-105 transition-transform duration-300"
+                  >
+                    <Image
+                      src={image}
+                      alt={`Project ${index + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+
+            {/* Gradient overlays for fade effect */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-transparent via-transparent to-transparent pointer-events-none z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-transparent via-transparent to-transparent pointer-events-none z-10"></div>
           </div>
         </div>
       </div>
