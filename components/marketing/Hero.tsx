@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 bg-gradient-to-br from-teal-400 via-cyan-300 to-white relative overflow-hidden">
+    <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 relative overflow-hidden" style={{ backgroundImage: 'url(/herobackground.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col items-start max-w-2xl">
           {/* Badge */}
