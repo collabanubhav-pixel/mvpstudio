@@ -1,5 +1,4 @@
 "use client";
-import BentoGridSecondDemo from "@/components/bento-grid-demo-2";
 import Link from "next/link";
 
 export default function Hero() {
@@ -29,8 +28,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      {/* Project Cards Bento Grid */}
-      <BentoGridSecondDemo />
     </section>
   );
 }
