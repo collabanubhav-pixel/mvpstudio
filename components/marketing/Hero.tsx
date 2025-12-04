@@ -3,29 +3,36 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="projects" className="w-full flex flex-col items-center justify-center px-3 md:px-0 pt-32 pb-16 bg-white">
-      <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
-        {/* Badge */}
-        <span className="inline-block mb-6 px-3 py-0.5 rounded-full bg-gradient-to-b from-gray-100 via-gray-200 to-gray-100 border border-gray-300 shadow-[0_2px_8px_rgba(0,0,0,0.08),_inset_0_1px_2px_rgba(255,255,255,0.5)] text-xs text-gray-900 font-normal tracking-wide uppercase" style={{ fontFamily: 'Satoshi-Regular, sans-serif', letterSpacing: '0.08em' }}>
-          15+ MVPs Delivered
-        </span>
-        {/* Heading */}
-        <h1 className="text-gray-900 text-4xl md:text-6xl font-normal text-center mb-6 mt-2" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
-          From Ideas To Impact  <br/>
-         MVPs that Validate And Dominate
-        </h1>
-        {/* Subtitle */}
-        <br/>
-        <br/>
-        <br/>
-        {/* Buttons */}
-        <div className="flex flex-row items-center justify-center gap-4 mb-14">
-          <Link href="/work" className="px-6 py-2 rounded-full text-white font-normal text-base transition bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border border-gray-700 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
-            See All Projects
-          </Link>
-          <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full bg-gray-900 text-white font-normal text-base border border-gray-800 transition hover:bg-gray-800 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
-            Contact Now
-          </a>
+    <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 bg-gradient-to-br from-teal-400 via-cyan-300 to-white relative overflow-hidden">
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="flex flex-col items-start max-w-2xl">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/30 backdrop-blur-sm border border-white/40 shadow-sm">
+            <span className="text-sm text-gray-800 font-medium" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+              15+ MVPs Delivered
+            </span>
+          </div>
+
+          {/* Heading */}
+          <h1 className="text-gray-900 text-5xl md:text-7xl font-normal text-left mb-8 leading-tight" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            The better way to<br />
+            build your <span className="italic font-light">products</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-gray-800 text-lg md:text-xl font-normal mb-10 max-w-xl leading-relaxed" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            A fully customizable MVP development service for individuals, businesses and startups building products where users meet users.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-row items-center gap-4">
+            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full bg-white text-gray-900 font-medium text-base border border-gray-200 shadow-md transition hover:shadow-lg hover:scale-105 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+              Get started
+            </a>
+            <Link href="/work" className="px-7 py-3 rounded-full text-gray-900 font-medium text-base border-2 border-gray-900/20 backdrop-blur-sm transition hover:bg-white/50 hover:border-gray-900/30 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+              View Projects →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
