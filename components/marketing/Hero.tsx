@@ -19,7 +19,7 @@ export default function Hero() {
           {/* Heading */}
           <h1 className="text-gray-900 text-5xl md:text-7xl font-medium text-center mb-8 leading-tight" style={{ fontFamily: 'Satoshi-Medium, sans-serif' }}>
             From Ideas To Impact<br />
-            Products that <span className="italic font-light">Dominate</span>
+            Products that <span className="font-cormorant italic font-light">Dominate</span>
           </h1>
 
           {/* Subtitle */}

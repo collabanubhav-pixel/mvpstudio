@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			cormorant: ['var(--font-cormorant)'],
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
