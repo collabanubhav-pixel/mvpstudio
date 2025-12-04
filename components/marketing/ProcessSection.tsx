@@ -146,10 +146,10 @@ export default function ProcessSection() {
             </span>
           </div>
           <div className="flex flex-row items-center gap-3 mt-4 md:mt-0">
-            <Link href="/work" className="px-6 py-2 rounded-full text-white font-normal text-base transition bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border border-gray-700 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            <Link href="/work" className="px-6 py-2 rounded-full text-white font-normal text-base transition-all duration-300 bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 border border-gray-600 backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.25),0_3px_6px_rgba(0,0,0,0.15)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_8px_16px_rgba(0,0,0,0.3),0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.15)]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               See All Projects
             </Link>
-            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full text-white font-normal text-base transition bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border border-gray-700 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.15)] hover:from-gray-700 hover:via-gray-800 hover:to-gray-700 active:scale-[0.98]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full text-white font-normal text-base transition-all duration-300 bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 border border-gray-600 backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.25),0_3px_6px_rgba(0,0,0,0.15)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_8px_16px_rgba(0,0,0,0.3),0_4px_8px_rgba(0,0,0,0.2)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.15)]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               Contact Now
             </a>
           </div>

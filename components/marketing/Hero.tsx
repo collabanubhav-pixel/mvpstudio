@@ -29,10 +29,10 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-row items-center gap-4">
-            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full bg-white text-gray-900 font-medium text-base border border-gray-200 shadow-md transition hover:shadow-lg hover:scale-105 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            <a href="https://cal.com/mvpstudio.in/30min" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-full bg-gradient-to-b from-white to-gray-50 text-gray-900 font-medium text-base border border-gray-300 shadow-[0_8px_16px_rgba(0,0,0,0.12),0_4px_8px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.16),0_6px_12px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-300 hover:-translate-y-1 active:translate-y-0 active:shadow-[0_4px_8px_rgba(0,0,0,0.12),inset_0_1px_3px_rgba(0,0,0,0.1)]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               Get started
             </a>
-            <Link href="/work" className="px-7 py-3 rounded-full text-gray-900 font-medium text-base border-2 border-gray-900/20 backdrop-blur-sm transition hover:bg-white/50 hover:border-gray-900/30 active:scale-95" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
+            <Link href="/work" className="px-7 py-3 rounded-full text-gray-900 font-medium text-base border-2 border-gray-900/30 bg-white/40 backdrop-blur-sm shadow-[0_6px_12px_rgba(0,0,0,0.08),0_3px_6px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.7)] hover:bg-white/60 hover:border-gray-900/40 hover:shadow-[0_8px_16px_rgba(0,0,0,0.12),0_4px_8px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.8)] transition-all duration-300 hover:-translate-y-1 active:translate-y-0 active:shadow-[0_3px_6px_rgba(0,0,0,0.08),inset_0_1px_3px_rgba(0,0,0,0.08)]" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               View Projects →
             </Link>
           </div>
