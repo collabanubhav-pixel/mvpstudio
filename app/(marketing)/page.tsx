@@ -1,4 +1,5 @@
 import Hero from "@/components/marketing/Hero";
+import ProjectShowcase from "@/components/marketing/ProjectShowcase";
 import ProcessSection from "@/components/marketing/ProcessSection";
 import DesignServicesSection from "@/components/marketing/DesignServicesSection";
 import { PricingSection } from "@/components/marketing/Pricing";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
+      <ProjectShowcase />
       <ProcessSection />
       <DesignServicesSection />
       <PricingSection />
