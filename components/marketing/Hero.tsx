@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 relative overflow-hidden" style={{ backgroundImage: 'url(/herobackground.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section id="projects" className="w-full min-h-[85vh] flex items-center justify-center px-6 md:px-12 pt-44 pb-20 relative overflow-hidden" style={{ backgroundImage: 'url(/herobackground.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       {/* White fade at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
 
