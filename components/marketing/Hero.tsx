@@ -15,8 +15,8 @@ export default function Hero() {
 
           {/* Heading */}
           <h1 className="text-gray-900 text-5xl md:text-7xl font-medium text-left mb-8 leading-tight" style={{ fontFamily: 'Satoshi-Medium, sans-serif' }}>
-            The better way to<br />
-            build your <span className="italic font-light">products</span>
+            From Ideas To Impact<br />
+           MVPs that Validate And <span className="italic font-light"> Dominate</span>
           </h1>
 
           {/* Subtitle */}
