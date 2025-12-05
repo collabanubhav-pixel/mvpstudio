@@ -1,9 +1,9 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { FiPhoneCall, FiMenu, FiX } from 'react-icons/fi'
-import { FaRegDotCircle } from 'react-icons/fa'
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -15,8 +15,13 @@ export function Navbar() {
           {/* Logo and Brand */}
           <div className="flex items-center space-x-2">
             <Link href="/#projects" className="flex items-center space-x-2">
-              <FaRegDotCircle className="text-gray-900 w-5 h-5" />
-              <span className="font-normal text-base text-gray-900" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>MVP Studio</span>
+              <Image
+                src="/mvpstudiologo.png"
+                alt="MVP Studio"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
           {/* Hamburger for mobile */}
